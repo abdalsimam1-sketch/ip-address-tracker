@@ -1,7 +1,11 @@
-function App() {
-  const [count, setCount] = useState(0);
+import { Home } from "./pages/Home";
 
-  return <></>;
+function App() {
+  return (
+    <>
+      <Home></Home>
+    </>
+  );
 }
 
 export default App;
