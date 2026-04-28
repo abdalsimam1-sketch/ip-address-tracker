@@ -100,3 +100,26 @@
   line-height: var(--text-preset-6-line-height);
   letter-spacing: var(--text-preset-6-letter-spacing);
 }
+
+.upper-section {
+  background-image: url(../src/assets/images/pattern-bg-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-size: cover;
+  width: 100%;
+}
+.input-container {
+  max-width: 500px;
+  width: 90%;
+}
+/* Tablet  */
+@media (min-width: 768px) {
+  .upper-section {
+    background-image: url(../src/assets/images/pattern-bg-desktop.png);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+}
