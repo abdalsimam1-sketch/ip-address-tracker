@@ -1,0 +1,102 @@
+:root {
+  /* General */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gray */
+  --color-gray-900: #3f3f3f;
+  --color-gray-950: #2c2c2c;
+  --color-gray-500: #707070;
+  --color-gray-400: #959595;
+  --color-gray-200: #d8d8d8;
+  --color-gray-100: #ededed;
+
+  /* Green */
+  --color-green-300: #3effcd;
+
+  /* Typography */
+
+  /* Text Preset 1 — Rubik Medium */
+  --text-preset-1-font-family: "Rubik", sans-serif;
+  --text-preset-1-font-size: 32px;
+  --text-preset-1-font-weight: 500;
+  --text-preset-1-line-height: 100%;
+  --text-preset-1-letter-spacing: -0.25px;
+
+  /* Text Preset 2 — Rubik Medium */
+  --text-preset-2-font-family: "Rubik", sans-serif;
+  --text-preset-2-font-size: 32px;
+  --text-preset-2-font-weight: 500;
+  --text-preset-2-line-height: 100%;
+  --text-preset-2-letter-spacing: -0.25px;
+
+  /* Text Preset 3 — Rubik Medium */
+  --text-preset-3-font-family: "Rubik", sans-serif;
+  --text-preset-3-font-size: 20px;
+  --text-preset-3-font-weight: 500;
+  --text-preset-3-line-height: 100%;
+  --text-preset-3-letter-spacing: -0.25px;
+
+  /* Text Preset 4 — Rubik Regular */
+  --text-preset-4-font-family: "Rubik", sans-serif;
+  --text-preset-4-font-size: 18px;
+  --text-preset-4-font-weight: 400;
+  --text-preset-4-line-height: 100%;
+  --text-preset-4-letter-spacing: 0px;
+
+  /* Text Preset 5 — Rubik Bold */
+  --text-preset-5-font-family: "Rubik", sans-serif;
+  --text-preset-5-font-size: 12px;
+  --text-preset-5-font-weight: 700;
+  --text-preset-5-line-height: 100%;
+  --text-preset-5-letter-spacing: 1.75px;
+
+  /* Text Preset 6 — Rubik Bold */
+  --text-preset-6-font-family: "Rubik", sans-serif;
+  --text-preset-6-font-size: 10px;
+  --text-preset-6-font-weight: 700;
+  --text-preset-6-line-height: 100%;
+  --text-preset-6-letter-spacing: 1.75px;
+}
+.text-preset-1 {
+  font-family: var(--text-preset-1-font-family);
+  font-size: var(--text-preset-1-font-size);
+  font-weight: var(--text-preset-1-font-weight);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+}
+.text-preset-2 {
+  font-family: var(--text-preset-2-font-family);
+  font-size: var(--text-preset-2-font-size);
+  font-weight: var(--text-preset-2-font-weight);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+}
+.text-preset-3 {
+  font-family: var(--text-preset-3-font-family);
+  font-size: var(--text-preset-3-font-size);
+  font-weight: var(--text-preset-3-font-weight);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing);
+}
+.text-preset-4 {
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  font-weight: var(--text-preset-4-font-weight);
+  line-height: var(--text-preset-4-line-height);
+  letter-spacing: var(--text-preset-4-letter-spacing);
+}
+.text-preset-5 {
+  font-family: var(--text-preset-5-font-family);
+  font-size: var(--text-preset-5-font-size);
+  font-weight: var(--text-preset-5-font-weight);
+  line-height: var(--text-preset-5-line-height);
+  letter-spacing: var(--text-preset-5-letter-spacing);
+}
+.text-preset-6 {
+  font-family: var(--text-preset-6-font-family);
+  font-size: var(--text-preset-6-font-size);
+  font-weight: var(--text-preset-6-font-weight);
+  line-height: var(--text-preset-6-line-height);
+  letter-spacing: var(--text-preset-6-letter-spacing);
+}
