@@ -1,6 +1,9 @@
 export const DataSection = ({ data }) => {
   return (
-    <div className="d-flex h-100 w-100 justify-content-center align-items-center">
+    <div
+      className="d-flex h-100 w-100 justify-content-center align-items-center"
+      style={{ zIndex: "1000" }}
+    >
       <div className="position-absolute card p-md-4">
         <div className="row ">
           {data.map((item, index) => (
