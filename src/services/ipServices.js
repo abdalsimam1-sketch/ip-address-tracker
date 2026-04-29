@@ -8,10 +8,11 @@ export const fetchIpData = async (ip) => {
       throw new Error(`Request Failed : ${response.status}`);
     }
     const data = await response.json();
-    return data;
+
     if (!data) {
       throw new Error("No data was returned");
     }
+    return data;
   } catch (error) {
     console.log(error);
   }
