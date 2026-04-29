@@ -2,6 +2,7 @@ import { mockIpData } from "../data/mockIpdata";
 import { DataSection } from "../components/DataSection";
 import { useState, useEffect } from "react";
 import { fetchIpData } from "../services/ipServices";
+import { Map } from "../components/Map";
 export const Home = () => {
   const [search, setSearch] = useState("");
   const [data, setData] = useState();
@@ -73,7 +74,17 @@ export const Home = () => {
       ) : (
         <DataSection data={data ? mapIpData(data) : []}></DataSection>
       )}
-      <section className="map-section"></section>
+      <section
+        className="map-section "
+        style={{ width: "100%", height: "550px" }}
+      >
+        {data && (
+          <Map
+            latitude={data?.location?.lat}
+            longitude={data?.location?.lng}
+          ></Map>
+        )}
+      </section>
     </main>
   );
 };
