@@ -113,6 +113,9 @@
   max-width: 500px;
   width: 90%;
 }
+.card {
+  width: 90%;
+}
 /* Tablet  */
 @media (min-width: 768px) {
   .upper-section {
@@ -122,4 +125,10 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .card {
+    width: 75%;
+  }
+  .card .col-lg-3:not(:last-child) {
+    border-right: 1px solid var(--color-gray-900);
+  }
 }
