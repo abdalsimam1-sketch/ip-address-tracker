@@ -14,7 +14,11 @@ export const Home = () => {
       const data = await fetchIpData(ip);
       setData(data);
       console.log(data);
-    } catch (error) {}
+    } catch (error) {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,7 +63,16 @@ export const Home = () => {
         </div>
       </section>
 
-      <DataSection data={data ? mapIpData(data) : []}></DataSection>
+      {loading ? (
+        <div className="d-flex justify-content-center align-items-center postion-absolute">
+          <div
+            className="spinner-border"
+            style={{ width: "10rem", height: "10rem" }}
+          ></div>
+        </div>
+      ) : (
+        <DataSection data={data ? mapIpData(data) : []}></DataSection>
+      )}
       <section className="map-section"></section>
     </main>
   );
